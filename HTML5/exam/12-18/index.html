@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="song/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="song/css/swiper.min.css"/>
+    <link rel="stylesheet" href="song/css/index.css"/>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <p class="head"><i class="fa fa-list"></i><span>首页</span></p>
+    </header>
+    <section class="section">
+        <ul class="nav">
+            <li><a href="songer.html">我的</a></li>
+            <li><a href="#">推荐</a></li>
+            <li><a href="#">排行</a></li>
+            <li><a href="#">分类</a></li>
+        </ul>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/index_02.png" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/index_02.png" alt=""/>
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/index_02.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="scl">
+                <div class="scroll">
+                    <div class="left">
+                        <img src="images/index_05.png" alt=""/>
+                    </div>
+                    <div class="right">
+                        <img src="images/index_07.png" alt=""/>
+                        <img src="images/index_10.png" alt=""/>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="left">
+                        <img src="images/index_05.png" alt=""/>
+                    </div>
+                    <div class="right">
+                        <img src="images/index_07.png" alt=""/>
+                        <img src="images/index_10.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <dl class="foot-left"><dt>
+                <a href="main.html">
+                <img src="images/m2.jpg" alt=""/>
+                </a>
+            </dt>
+            <dd>
+                <b>2:23</b>
+            </dd>
+        </dl>
+        <span class="foot-right">
+            <i class="fa fa-fast-backward"></i>
+            <i class="fa fa-pause"></i>
+            <i class="fa fa-fast-forward"></i>
+        </span>
+    </footer>
+</div>
+<script src="js/swiper.min.js"></script>
+<script src="js/iscroll5.js"></script>
+<script>
+    var wrap = new IScroll('.content');
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: "horizontal",
+        autoplay: 1500
+    });
+
+</script>
+</body>
+</html>

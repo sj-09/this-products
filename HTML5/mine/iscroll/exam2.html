@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="cont">
+        <form action="">
+            <lable>用户名：</lable>
+            <input type="text" autofocus/>
+            <lable>密　码：</lable>
+            <input type="password" petter="^(/d|/w) (/d)$"/>
+            <input type="text" list="num"/>
+            <datalist id="num">
+                <option value="abc"></option>
+                <option value="number"></option>
+                <option value="html"></option>
+                <option value="abcdefg"></option>
+                <option value="aba"></option>
+            </datalist>
+            <lable>网　址：</lable>
+            <input type="url" autocomplete name="com"/>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</body>
+</html>

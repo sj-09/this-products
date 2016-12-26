@@ -1,0 +1,115 @@
+*
+  margin: 0
+  padding: 0
+  text-decoration: none
+  list-style: none
+
+html, body
+  width: 100%
+  height: 100%
+
+.container
+  width: 100%
+  height: 100%
+  display: flex
+  -webkit-flex-direction: column
+  box-sizing: border-box
+  position: relative
+  .header
+    width: 100%
+    height: 44px
+    line-height: 44px
+    position: relative
+    background: #33b8ae
+    text-align: center
+    font-weight: bold
+    color: #ffffff
+    i
+      position: absolute
+      top: 10px
+      left: 20px
+      font-size: 24px
+
+.section
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+.nav
+  text-align: center
+  display: flex
+  height: 44px
+  line-height: 44px
+  li
+    width: 25%
+    justify-content: space-between
+    box-shadow: 1px 0 3px #ccc
+    position: relative
+    overflow: hidden
+    span
+      position: absolute
+      bottom: 0
+      right: -10px
+      width: 0
+      height: 0
+      border: 10px solid transparent
+      border-bottom-color: #3c3c3c
+    a
+      color: #000000
+.scroll
+  width: 100%
+  height: 100%
+  margin-bottom: 88px
+  overflow: hidden
+  .cont
+    width: 100%
+    height: 150px
+    dt
+      float: left
+      width: 45%
+      height: 150px
+      text-align: center
+      img
+        width: 130px
+        height: 120px
+        margin-top: 15px
+    dd
+      width: 45%
+      float: left
+      padding-left: 5%
+      padding-right: 5%
+      ul
+        li
+          list-style: none
+          margin-top: 14px
+          letter-spacing: 3px
+          font-size: 12px
+          h3
+            font-size: 16px
+          span
+            color: #ff7200
+
+.fr
+  float: right
+  background: #ff7200
+  padding: 3px
+  color: #ffffff
+
+
+.rot3
+  width: 30px
+  height: 50px
+  border-radius: 20px
+  background: #ff7680
+  position: absolute
+  top: 10px
+  right: 10px
+  animation: rotat 1s linear infinite
+
+
+@keyframes  rotat
+  from
+    -webkit-transform: rotate3d(0,0,0,0deg)
+  to
+    -webkit-transform: rotate3d(1,0,1,1980deg)
+

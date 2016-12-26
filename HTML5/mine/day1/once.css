@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+img {
+  width: 25%;
+  height: 25%; }
+
+.warp {
+  -webkit-flex: 1;
+  width: 100%;
+  height: 100%;
+  background: #eeeeee; }
+  .warp .header {
+    width: 100%;
+    padding-left: 2%;
+    height: 44px;
+    line-height: 44px;
+    background: #2a2b2c; }
+    .warp .header a {
+      display: inline-block;
+      width: 10%;
+      text-align: center;
+      float: left;
+      font-size: 12px;
+      color: #fff; }
+    .warp .header span {
+      display: inline-block;
+      margin-left: 22%;
+      float: left;
+      font-size: 16px;
+      color: #ffffff; }
+    .warp .header .txt {
+      float: right;
+      font-size: 20px; }
+  .warp .cont {
+    text-align: center; }
+    .warp .cont .o_p {
+      padding-left: 2%;
+      height: 44px;
+      line-height: 44px;
+      background: #ffffff;
+      margin-bottom: 40px; }
+      .warp .cont .o_p a {
+        display: inline-block;
+        width: 10%;
+        text-align: center;
+        float: left;
+        font-size: 12px;
+        color: #37bc9b; }
+      .warp .cont .o_p span {
+        display: inline-block;
+        margin-left: 36%;
+        float: left;
+        font-size: 16px;
+        color: #000000;
+        font-weight: bold; }
+    .warp .cont .text {
+      margin-top: 40px;
+      padding-left: 20%;
+      height: 50px;
+      width: 80%;
+      background: url("../image/2_07.png") no-repeat;
+      background-position: 30px 13px;
+      background-size: 5%;
+      background-color: #ffffff; }
+    .warp .cont .psd {
+      padding-left: 20%;
+      height: 50px;
+      width: 80%;
+      background: url("../image/2_10.png") no-repeat;
+      background-position: 30px 13px;
+      background-size: 5%;
+      background-color: #ffffff; }
+    .warp .cont .submit {
+      margin-top: 10px;
+      width: 80%;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background: #37bc9b; }
+  .warp .footer {
+    color: #37bc9b;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 44px;
+    text-align: center; }
+    .warp .footer a {
+      color: #37bc9b; }
+
+/*# sourceMappingURL=once.css.map */

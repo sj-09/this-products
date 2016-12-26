@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100px; }
+
+.cont {
+  width: 100%;
+  font-size: 0.14rem; }
+  .cont .header {
+    height: 0.44rem;
+    line-height: 44px;
+    background: #ccc; }
+    .cont .header p {
+      display: flex; }
+      .cont .header p span {
+        display: block;
+        line-height: 44px;
+        text-align: center; }
+      .cont .header p .h-a {
+        -webkit-flex-grow: 0.7; }
+      .cont .header p .h-b {
+        -webkit-flex-grow: 0.7; }
+      .cont .header p .h-c {
+        font-size: 0.16rem;
+        -webkit-flex-grow: 8; }
+      .cont .header p .h-d {
+        font-size: 0.2rem;
+        font-weight: bold;
+        -webkit-flex-grow: 0.6; }
+  .cont .section {
+    width: 100%; }
+    .cont .section .first {
+      display: flex;
+      height: 0.33rem;
+      line-height: 0.33rem;
+      text-align: center; }
+      .cont .section .first .left {
+        -webkit-flex: 1;
+        -webkit-flex-grow: 2;
+        background: #00ff00; }
+      .cont .section .first .right {
+        -webkit-flex: 1;
+        -webkit-flex-grow: 8;
+        background: #0000ff; }
+    .cont .section .second {
+      display: flex;
+      display: -webkit-flex;
+      height: 0.5rem; }
+      .cont .section .second .sec-l img {
+        -webkit-flex: 1;
+        width: 35px;
+        height: 35px;
+        margin: 10px; }
+      .cont .section .second .sec-r {
+        width: 100%; }
+        .cont .section .second .sec-r input {
+          -webkit-flex: 1;
+          width: 98%;
+          outline: 0;
+          -webkit-appearance: none;
+          line-height: 0.5rem; }
+
+/*# sourceMappingURL=protace.css.map */

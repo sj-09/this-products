@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+  <canvas width="600" height="500" style="background:#abcdef" id="can"></canvas>
+  <script>
+      var can=document.getElementById("can");
+      var cxt=can.getContext("2d");
+      var pi=Math.PI;
+          cxt.beginPath();
+      //cxt.fillStyle="#ff0";
+      //cxt.fillRect(20,20,100,100);
+
+      /*cxt.arc(300,250,200 ,0,2*pi);
+         cxt.lineWidth="10";
+         cxt.fillStyle="red";
+         cxt.fill();
+         cxt.stroke();*/
+      cxt.moveTo(300,250);
+      cxt.arc(300,250,200,0,0.08*pi,false);
+      cxt.fillStyle="#0ff";
+      cxt.closePath();
+      cxt.fill();
+      cxt.beginPath();
+      cxt.moveTo(300,250);
+      cxt.arc(300,250,200,0.08*pi,0.22*pi,false);
+      cxt.fillStyle="#ff0";
+      cxt.closePath();
+      cxt.fill();
+      cxt.beginPath();
+      cxt.moveTo(300,250);
+      cxt.arc(300,250,200,0.22*pi,0.5*pi,false);
+      cxt.fillStyle="#f0f";
+      cxt.closePath();
+      cxt.fill();
+      cxt.beginPath();
+      cxt.moveTo(300,250);
+      cxt.arc(300,250,200,0.5*pi,0.8*pi,false);
+      cxt.fillStyle="#f00";
+      cxt.closePath();
+      cxt.fill();
+      cxt.beginPath();
+      cxt.moveTo(300,250);
+      cxt.arc(300,250,200,0.8*pi,2*pi,false);
+      cxt.fillStyle="#0f0";
+      cxt.closePath();
+      cxt.fill()
+
+
+
+
+  </script>
+</body>
+</html>

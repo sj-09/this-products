@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/city.css"/>
+</head>
+<body>
+ <div class="cont">
+     <header class="header">
+         header
+     </header>
+     <section class="section">
+         <form action="">
+             <h5>用户名</h5>
+             <input type="text" placeholder="请输入用户名" id="user"/>
+             <h5>密　码</h5>
+             <input type="password" placeholder="请输入密码" id="pwd"/>
+             <input type="button" value="提交" id="btn"/>
+         </form>
+     </section>
+     <footer class="footer">
+         footer
+     </footer>
+ </div>
+ <script>
+     var user=document.getElementById("user"),
+         pwd=document.getElementById("pwd"),
+         btn=document.getElementById("btn"),
+         ls=window.localStorage;
+
+     btn.onclick=function(){
+         var name=user.value,
+             pswd=pwd.value;
+         ls.setItem("name",name);
+         ls.setItem("psd",pswd);
+     }
+ </script>
+</body>
+</html>

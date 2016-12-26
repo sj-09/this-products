@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "icon";
+  src: url("../icon-fonts/iconfont.ttf");
+  src: url("../icon-fonts/iconfont.woff");
+}
+.ic{
+  font-family: "icon";
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background: #cccccc;
+}

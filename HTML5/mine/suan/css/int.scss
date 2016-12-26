@@ -1,0 +1,158 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+@media screen and (max-width: 320px){
+    body{
+font-size: 14px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 400px){
+    body{
+font-size: 16px;
+    }
+}
+@media screen and (min-width: 401px){
+    body{
+font-size: 18px;
+    }
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+html{
+  font-size: 62.5%
+}
+@mixin position($p:absolute){
+    position: $p;
+}
+
+.warp {
+  display: flex;
+  -webkit-flex-direction: column;
+  width: 100%;
+  height: 100%;
+  .header{
+     width: 100%;
+     height: 4.4rem;
+     background: #222222;
+     color: #ffffff;
+     text-align: center;
+     line-height: 4.4rem;
+    .head{
+      @include position(relative);
+      .left{
+        @include position();
+        left: 1rem;
+        color: #ffffff;
+      }
+      .right{
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+        color: #ffffff;
+      }
+    }
+  }
+  .cont{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .tophe{
+      margin-left: 5%;
+      ul{
+        line-height: 5rem;
+        padding-left: 2rem;
+        input{
+          border: none;
+          outline: 0;
+          -webkit-appearance: none;
+          &.wid60{
+            width: 60%;
+
+          }
+        }
+        .daikuan{
+          label{
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 1.5rem;
+            background: #ffffff;
+            vertical-align: middle;
+            margin-right: 1rem;
+            border: 1px solid #c0c0c0;
+          }
+
+        }
+        .button{
+          width: 90%;
+          height: 3.6rem;
+          background: #ff7200;
+          border: none;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+
+}
+
+#one:checked+label{
+  background: #00ff00;
+}
+#two:checked+label {
+  background: #00ff00;
+}
+.result{
+  margin-top: 3rem;
+  width:80%;
+  height:21rem;
+  border: 1px solid #cccccc;
+  margin-left: 10%;
+  position: relative;
+  .small-result{
+    text-align: center;
+    width: 30%;
+    height: 30px;
+    background: #ffffff;
+    position: absolute;
+    top: -10px;
+    left: 35%;
+  }
+  ul{
+    width: 100%;
+    li{
+      width: 80%;
+      margin-left: 10%;
+      line-height: 3rem;
+      height: 3rem;
+      text-align: center;
+      .fl{
+        float: left;
+      }
+      .fr{
+        float: right;
+      }
+      b{
+        color: #ff7200;
+      }
+    }
+    .bor-btm{
+      border-bottom: 1px solid #9d9d9d;
+    }
+    .througt{
+      text-decoration: line-through;
+    }
+    .line-th{
+      line-height: 2rem;
+      height: 2rem;
+      color: #c0c0c0;
+    }
+  }
+}

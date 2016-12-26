@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #00f;
+            margin: 100px auto;
+            -webkit-transition: all 1s ease-in;
+        }
+
+        .box:hover {
+            -webkit-transform: rotate(135deg);
+            background: #0f0;
+            border-radius: 100%;
+        }
+
+        .info {
+            width: 100px;
+            height: 100px;
+            background: #000;
+            position: relative;
+            animation: info 4s;
+        }
+
+        @keyframes info {
+            0% {
+                background: #f00;
+                left: 0;
+                top: 0
+            }
+            25% {
+                background: #ff0;
+                left: 200px;
+                top: 0
+            }
+            50% {
+                background: #0f0;
+                left: 200px;
+                top: 200px
+            }
+            75% {
+                background: #0ff;
+                left: 0;
+                top: 200px
+            }
+            100% {
+                background: #00f;
+                left: 0;
+                top: 0
+            }
+        }
+
+
+        input:checked + .big-cl .in-cl {
+            margin-left: 25px;
+            background: #fff;
+            -webkit-transition: margin-left 1s
+        }
+
+        input + .big-cl .in-cl {
+            margin-left: 0;
+            background: #fff;
+            -webkit-transition: margin-left 1s
+        }
+
+        input:checked + .big-cl {
+            background: #00ff00;
+            -webkit-transition: margin-left 1s
+        }
+
+        input + .big-cll {
+            background: none;
+            -webkit-transition: margin-left 1s
+        }
+
+        .big-cl {
+            display: block;
+            width: 50px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+
+        }
+
+        .in-cl {
+            width: 25px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    盒子
+</div>
+<div class="info">
+    abcd
+</div>
+
+<input type="checkbox"/>
+<label class="big-cl">
+    <div class="in-cl"></div>
+</label>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  body .my-nav button {
+    top: 30%; } }
+body {
+  min-width: 320px; }
+
+.my-nav {
+  position: relative; }
+  .my-nav input {
+    background-color: #313131;
+    border: none;
+    color: #999; }
+  .my-nav button {
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #999; }
+
+.my-dialog .my-dialog-h4 {
+  text-align: center;
+  font-weight: 800; }
+.my-dialog .my-user {
+  margin-bottom: 10px; }
+.my-dialog .modal-footer {
+  text-align: center; }
+  .my-dialog .modal-footer button {
+    margin-right: 15px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+*
+  margin: 0
+  padding: 0
+
+@media screen and (max-width: 320px)
+  body
+    font-size: 14px
+@media screen and (min-width: 321px) and (max-width: 400px)
+  body
+    font-size: 16px
+
+@media screen and (min-width: 401px)
+  body
+    font-size: 18px
+html,body
+  width: 100%
+  height: 100%
+
+html
+  font-size: 62.5%
+
+
+
+
+.container
+  display: flex
+  width: 100%
+  height: 100%
+  -webkit-flex-direction: column
+  overflow: hidden
+  .header
+    width: 100%
+    height: 44px
+    line-height: 44px
+    background: #c0c0c0
+  .section
+    flex: 1
+    display: flex
+    -webkit-flex-direction: column
+    width: 100%
+    height: 100%
+    .swiper-slide
+      height: 200px
+      overflow: hidden
+      background: #5cb85c
+    .bottom-box
+      background: #0ff
+      height: 100%
+      overflow: hidden
+    li
+      line-height: 30px
+  .footer
+    width: 100%
+    height: 44px
+    line-height: 44px
+    background: #00f

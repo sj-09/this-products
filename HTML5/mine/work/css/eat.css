@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.container {
+  display: flex;
+  -webkit-flex-direction: column;
+  box-sizing: border-box; }
+  .container .header {
+    -webkit-flex: 1;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    position: relative;
+    background: #33b8ae;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff; }
+    .container .header i {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 24px; }
+  .container .section {
+    -webkit-flex: 1;
+    width: 100%;
+    heigth: 100%; }
+    .container .section .nav {
+      text-align: center;
+      display: flex;
+      height: 44px;
+      line-height: 44px; }
+      .container .section .nav li {
+        -webkit-flex: 1;
+        width: 20%;
+        justify-content: space-between;
+        box-shadow: 1px 0 3px #ccc; }
+        .container .section .nav li a {
+          color: #000000; }
+    .container .section .logo img {
+      width: 100%;
+      height: 85px; }
+    .container .section .list {
+      width: 100%;
+      display: flex;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      margin-bottom: 10px; }
+      .container .section .list .l-left {
+        -webkit-flex: 1;
+        width: 50%;
+        color: #269abc;
+        border-bottom: 1px solid #269abc; }
+      .container .section .list .l-right {
+        -webkit-flex: 1;
+        width: 50%; }
+    .container .section .content {
+      flex-wrap: wrap;
+      display: flex;
+      width: 100%; }
+      .container .section .content .pict {
+        width: 45%;
+        margin-left: 5%; }
+        .container .section .content .pict dl dt img {
+          width: 90%;
+          height: 70%; }
+        .container .section .content .pict dl dd {
+          font-size: 12px;
+          line-height: 30px; }
+          .container .section .content .pict dl dd b {
+            font-size: 20px;
+            color: #ff0; }
+        .container .section .content .pict dl span {
+          float: right;
+          padding-right: 15%; }
+
+/*# sourceMappingURL=eat.css.map */

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p{  box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            border: 1px solid #000000;
+        }
+        #check{
+            display: none;
+        }
+        #check:checked+label{
+            background: #00d;
+        }
+        label{
+            display: block;
+            border: 1px solid #3c3c3c;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            position: absolute;
+            top: 0;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>更新 <input type="checkbox" id="check"/><label for="check"></label></p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.my-cont{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+section{
+    overflow: hidden;
+    width: 100%;
+    nav{
+        .active{
+            background-color: #ff9f31;
+        }
+        a{
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+        }
+        background-color: #ddd;
+    }
+}
+
+
+header,footer{
+    height: 44px;
+    line-height: 44px;
+    background-color: #999;
+    width: 100%;
+    text-align: center;
+}
+footer{
+    a{
+        display: inline-block;
+        text-align: center;
+        line-height: 44px;
+    }
+    .active{
+        background-color: #ddd;
+    }
+}

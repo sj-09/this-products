@@ -1,0 +1,206 @@
+*
+  margin: 0
+  padding: 0
+  list-style: none
+  text-decoration: none
+
+a
+  color: #000
+@media screen and (max-width: 320px)
+  body
+    font-size: 14px
+@media screen and (min-width: 321px) and (max-width: 400px)
+  body
+    font-size: 16px
+
+@media screen and (min-width: 401px)
+  body
+    font-size: 18px
+@font-face
+  font-family: "icon"
+  src: url("../icon-fonts/iconfont.ttf")
+  src: url("../icon-fonts/iconfont.woff")
+
+.ic
+  font-family: "icon"
+
+html,body
+  width: 100%
+  height: 100%
+
+html
+  font-size: 625%
+
+.container
+  display: flex
+  width: 100%
+  height: 100%
+  -webkit-flex-direction: column
+  overflow: hidden
+  position: relative
+  .header
+    width: 100%
+    height: .44rem
+    line-height: .44rem
+    background: #444444
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    text-align: center
+    font-size: .24rem
+    color: #fff
+    .back
+      position: absolute
+      top: .15rem
+      left: .15rem
+    .close
+      position: absolute
+      top: .01rem
+      left: .6rem
+    .elli
+      position: absolute
+      top: .15rem
+      right: .15rem
+    a
+      font-size: .16rem
+      color: #fff
+  .section
+    flex: 1
+    display: flex
+    -webkit-flex-direction: column
+    width: 100%
+    height: 100%
+    overflow: hidden
+    .logo
+      height: 2rem
+      width: 100%
+      background: #c0c0c0
+      dl
+        height: 1.8rem
+        width: 100%
+        padding: .1rem
+        dt
+          width: 40%
+          float: left
+          img
+            height: 1.8rem
+            width: auto
+        dd
+          font-size: .14rem
+          .first
+            font-size: .2rem
+            span
+              font-size: .12rem
+              background: #007aff
+              padding: .04rem
+          li
+            padding-top: .06rem
+            .btn
+              width: 20%
+              margin-left: 2%
+              height: .36rem
+              background: #c0c0c0
+              color: #fff
+              border: 1px solid #fff
+    .cont
+      .list
+        line-height: .36rem
+        font-size: .14rem
+      .neir
+        height: 0.7rem
+        overflow: hidden
+      .slideup
+        text-align: center
+        font-size: .2rem
+    .box
+      width: 100%
+      overflow: hidden
+      margin-top: .2rem
+      height: 1.2rem
+      .img-box
+        width: 976px
+        img
+          margin-left: 10px
+          height: 1.2rem
+          float: left
+          width: auto
+    .bottom-box
+      box-sizing: border-box
+      height: 100%
+      overflow: hidden
+      h4
+        padding-left: .15rem
+        line-height: .4rem
+        a
+          float: right
+          padding-right: .1rem
+          color: #0000dd
+
+      li
+        p
+          img
+            width: .3rem
+            height: auto
+            border-radius: .15rem
+            float: left
+            margin-left: .1rem
+        .box-co
+          height: .3rem
+          margin-bottom: .1rem
+        a
+          float: right
+          padding-right: .15rem
+        a,b,span
+          padding-top: .1rem
+        .Nlis
+          padding-left: .4rem
+          line-height: .24rem
+        .heart
+          color: #ff0000
+.fix
+  position: fixed
+  bottom: .6rem
+  left: .2rem
+  width: .5rem
+  height: .5rem
+  background: #000000
+  opacity: .6
+  border-radius: .25rem
+  color: #fff
+  text-align: center
+  line-height: .5rem
+  font-size: .3rem
+.dis
+  display: none
+  position: fixed
+  bottom: .6rem
+  left: .2rem
+  width: 50%
+  height: .5rem
+  background: #000000
+  opacity: .6
+  border-radius: .25rem
+  color: #fff
+  text-align: center
+  font-size: .16rem
+  p
+    float: left
+    width: 20%
+    margin-top: .08rem
+  .clos
+    font-size: .3rem
+.red
+  color: red
+.footer
+  width: 100%
+  height: .44rem
+  line-height: .44rem
+  text-align: center
+  span
+    display: block
+    width: 90%
+    height: .4rem
+    background: #00ff00
+    color: #fff
+    border-radius: 5px
+    margin-left: 5%

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/comm.css"/>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h3><i class="fa fa-angle-left fl"></i>我要选座</h3>
+    </header>
+    <section class="section">
+        <div class="scroll">
+            <ul class="nav">
+                <li><a href="#">送票上门</a></li>
+                <li class="nav-bg"><a href="#">下铺</a></li>
+                <li><a href="#">靠窗</a></li>
+                <li><a href="#">选座/包厢</a></li>
+            </ul>
+            <div class="main">
+                <p class="first">至少
+                    <button id="litter">-</button>
+                    <input type="text" value="1" id="text"/>
+                    <button id="more">+</button>
+                    张下铺
+                </p>
+                <p class="second">
+                    <span>当指定下铺无票时，接收中上铺
+                    <input type="checkbox" id="check"/>
+                    <label for="check"></label>
+                    </span>
+                </p>
+            </div>
+            <div class="list">
+                <h4>配送信息</h4>
+                <ul>
+                    <li>收件人　 <input type="text" placeholder="张三"/></li>
+                    <li>配送区域 <input type="text" placeholder="北京市朝阳区酒仙桥"/></li>
+                    <li>收件地址 <input type="text" placeholder="北京市朝阳区酒仙桥"/></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <button>取消</button>
+        <button class="yes">确定</button>
+    </footer>
+</div>
+<script type="text/javascript" src="js/jquery1.1.js"></script>
+<script type="text/javascript" src="js/iscroll5.js"></script>
+
+<script type="text/javascript">
+    var wraps = new IScroll('.section');
+
+    var text = document.getElementById("text");
+
+    $("#more").click(function () {
+        tt = Number(text.value);
+        tt++;
+        if (tt > 5) {
+            alert("您一天之内最多只能预订5张");
+            tt = 5
+        }
+        text.value = tt
+    });
+    $("#litter").click(function () {
+        tt = Number(text.value);
+        tt--;
+        if (tt < 1) {
+            if (!confirm("您确定不预定了吗？")) {
+                tt = 1
+            } else {
+                tt = 0
+            }
+        }
+        text.value = tt
+    });
+   $(".nav").on("click","li",function(){
+       $(this).addClass("nav-bg").siblings().removeClass();
+   })
+
+</script>
+</body>
+</html>

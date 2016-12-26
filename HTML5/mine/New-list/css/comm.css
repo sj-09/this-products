@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 321px) and (max-width: 400px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 401px) {
+  body {
+    font-size: 18px; } }
+html, body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-flex-direction: column;
+  overflow: hidden; }
+
+.header {
+  width: 100%;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  background: #007aff;
+  text-align: center;
+  color: #ffffff; }
+  .header .fl {
+    float: left;
+    padding-top: 1.3rem;
+    padding-left: 1.5rem; }
+  .header .fr {
+    float: right;
+    padding-top: 1.3rem;
+    padding-right: 1.5rem; }
+
+.section {
+  flex: 1;
+  display: flex;
+  -webkit-flex-direction: column;
+  width: 100%;
+  height: 100%; }
+  .section .nav {
+    background: #444444;
+    color: #ffffff;
+    text-align: center;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    width: 100%;
+    display: flex; }
+    .section .nav div {
+      width: 20%; }
+    .section .nav .nav-bottom {
+      border-bottom: 0.4rem solid #0000ff; }
+
+.bottom-box {
+  background: #eeeeee;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+  .bottom-box .banner {
+    width: 100%;
+    height: 220px; }
+    .bottom-box .banner img {
+      width: 100%;
+      height: 220px; }
+  .bottom-box dl {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid #faf2cc; }
+    .bottom-box dl dt img {
+      width: 8rem;
+      height: 6rem; }
+    .bottom-box dl dd {
+      width: 100%;
+      padding-left: 1.5rem;
+      text-overflow: ellipsis; }
+      .bottom-box dl dd h4 {
+        font-size: 1.4rem;
+        line-height: 3rem; }
+      .bottom-box dl dd p {
+        line-height: 2rem; }
+        .bottom-box dl dd p span {
+          float: right;
+          padding-right: 2rem; }
+
+.footer {
+  width: 100%;
+  height: 4.4rem;
+  background: #444444;
+  display: flex;
+  text-align: center;
+  color: #ffffff; }
+  .footer div {
+    width: 25%; }
+    .footer div i {
+      padding-top: 0.4rem;
+      font-size: 2.8rem; }
+    .footer div p {
+      padding-top: 0.4rem;
+      font-size: 1.6rem; }
+
+/*# sourceMappingURL=shop.css.map */

@@ -1,0 +1,97 @@
+*
+  margin: 0
+  padding: 0
+
+@media screen and (max-width: 320px)
+  body
+    font-size: 14px
+
+@media screen and (min-width: 321px) and (max-width: 400px)
+  body
+    font-size: 16px
+
+@media screen and (min-width: 401px)
+  body
+    font-size: 18px
+
+html, body
+  width: 100%
+  height: 100%
+
+html
+  font-size: 62.5%
+
+.container
+  display: flex
+  width: 100%
+  height: 100%
+  -webkit-flex-direction: column
+  overflow: hidden
+  .header
+    width: 100%
+    height: 44px
+    line-height: 44px
+    background: #333333
+    color: #fff
+    text-align: center
+  .section
+    flex: 1
+    display: flex
+    -webkit-flex-direction: column
+    width: 100%
+    height: 100%
+    .swiper-slide
+      text-align: center
+      width: 100%
+      height: 160px
+      overflow: hidden
+      .img
+        width: 100%
+        height: 160px
+    .bottom-box
+      height: 100%
+      overflow: hidden
+      dl
+        display: flex
+        width: 100%
+        padding: 1rem
+        border-bottom: 1px solid #faf2cc
+        dt
+          img
+            width: 8rem
+            height: 6rem
+        dd
+          width: 100%
+          padding-left: 1.5rem
+          text-overflow: ellipsis
+          h4
+            font-size: 1.4rem
+            line-height: 3rem
+          p
+            line-height: 2rem
+            span
+              float: right
+              padding-right: 2rem
+  .footer
+    width: 100%
+    height: 44px
+    line-height: 44px
+    background: #333333
+    color: #fff
+    text-align: center
+
+#pullDown, #pullUp
+  height: 40px
+  line-height: 40px
+  text-align: center
+
+.pulldown-tips
+  height: 40px
+  line-height: 40px
+  text-align: center
+  position: absolute
+  top: -40px
+  left: 0
+  width: 100%
+.nav-bottom
+  border-bottom: .4rem solid #0000ff

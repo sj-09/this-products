@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.container {
+  display: flex;
+  -webkit-flex-direction: column; }
+  .container .header {
+    width: 100%;
+    height: 44px;
+    background: #33b8ae;
+    text-align: center;
+    color: #ffffff; }
+    .container .header input {
+      width: 50%;
+      height: 30px;
+      border: none;
+      border-radius: 20px;
+      background: #2ca399;
+      margin-top: 7px;
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 50px; }
+    .container .header .fl {
+      float: left;
+      font-size: 20px;
+      line-height: 44px;
+      padding-left: 10px; }
+    .container .header .fr {
+      float: right;
+      font-size: 20px;
+      line-height: 44px;
+      padding-right: 10px; }
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%; }
+
+.section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .section .logo img {
+    width: 100%;
+    height: 172px; }
+  .section .content {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    text-align: center; }
+    .section .content .pict {
+      margin-top: 15px;
+      width: 25%; }
+      .section .content .pict dl dt img {
+        width: 50%;
+        height: 50%; }
+      .section .content .pict dl dd {
+        font-size: 14px;
+        line-height: 30px; }
+  .section .cai {
+    line-height: 36px;
+    padding-left: 10px; }
+  .section .cont dl {
+    display: flex;
+    width: 100%; }
+    .section .cont dl dt {
+      -webkit-flex: 1;
+      -webkit-flex-grow: 3; }
+      .section .cont dl dt img {
+        width: 90px;
+        height: 90px; }
+    .section .cont dl dd {
+      -webkit-flex: 1;
+      -webkit-flex-grow: 7; }
+      .section .cont dl dd p {
+        font-size: 12px;
+        margin-top: 7px; }
+        .section .cont dl dd p span {
+          float: right;
+          margin-right: 10px; }
+        .section .cont dl dd p b {
+          color: #ff7200; }
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  text-align: center; }
+  .footer .foot {
+    -webkit-flex: 1;
+    font-size: 12px; }
+    .footer .foot i {
+      font-size: 24px; }
+
+/*# sourceMappingURL=swiper.css.map */

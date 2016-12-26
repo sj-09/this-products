@@ -1,0 +1,12 @@
+.header {
+  width: 200px;
+  height: 100px;
+  background: #abcdef; }
+
+div {
+  height: 60px;
+  width: 40px;
+  background: #abcdef;
+  position: absolute; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+$f:20px;
+
+$f1:40px;
+
+$f2:60px;
+%full{
+  width:200px;
+  height:100px;
+  background:#abcdef;
+}
+@mixin for($def:absolute){
+   position:$def
+}
+div{
+  height:$f2;
+  width:$f1;
+  background:#abcdef;
+  @include for
+}
+.header{
+  @extend %full
+}

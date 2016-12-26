@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 321px) and (max-width: 400px) {
+  body {
+    font-size: 16px; } }
+@media screen and (min-width: 401px) {
+  body {
+    font-size: 18px; } }
+html, body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+.warp {
+  display: flex;
+  -webkit-flex-direction: column;
+  width: 100%;
+  height: 100%; }
+  .warp .header {
+    width: 100%;
+    height: 4.4rem;
+    background: #222222;
+    color: #ffffff;
+    text-align: center;
+    line-height: 4.4rem; }
+    .warp .header .head {
+      position: relative; }
+      .warp .header .head .left {
+        position: absolute;
+        left: 1rem;
+        color: #ffffff; }
+      .warp .header .head .right {
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+        color: #ffffff; }
+  .warp .cont {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .warp .cont .tophe {
+      margin-left: 5%; }
+      .warp .cont .tophe ul {
+        line-height: 5rem;
+        padding-left: 2rem; }
+        .warp .cont .tophe ul input {
+          border: none;
+          outline: 0;
+          -webkit-appearance: none; }
+          .warp .cont .tophe ul input.wid60 {
+            width: 60%; }
+        .warp .cont .tophe ul .daikuan label {
+          display: inline-block;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 1.5rem;
+          background: #ffffff;
+          vertical-align: middle;
+          margin-right: 1rem;
+          border: 1px solid #c0c0c0; }
+        .warp .cont .tophe ul .button {
+          width: 90%;
+          height: 3.6rem;
+          background: #ff7200;
+          border: none;
+          border-radius: 1rem; }
+
+#one:checked + label {
+  background: #00ff00; }
+
+#two:checked + label {
+  background: #00ff00; }
+
+.result {
+  margin-top: 3rem;
+  width: 80%;
+  height: 21rem;
+  border: 1px solid #cccccc;
+  margin-left: 10%;
+  position: relative; }
+  .result .small-result {
+    text-align: center;
+    width: 30%;
+    height: 30px;
+    background: #ffffff;
+    position: absolute;
+    top: -10px;
+    left: 35%; }
+  .result ul {
+    width: 100%; }
+    .result ul li {
+      width: 80%;
+      margin-left: 10%;
+      line-height: 3rem;
+      height: 3rem;
+      text-align: center; }
+      .result ul li .fl {
+        float: left; }
+      .result ul li .fr {
+        float: right; }
+      .result ul li b {
+        color: #ff7200; }
+    .result ul .bor-btm {
+      border-bottom: 1px solid #9d9d9d; }
+    .result ul .througt {
+      text-decoration: line-through; }
+    .result ul .line-th {
+      line-height: 2rem;
+      height: 2rem;
+      color: #c0c0c0; }
+
+/*# sourceMappingURL=int.css.map */

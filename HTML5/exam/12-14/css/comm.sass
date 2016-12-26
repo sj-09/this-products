@@ -1,0 +1,170 @@
+*
+  margin: 0
+  padding: 0
+  text-decoration: none
+a
+  color: #000
+
+@media screen and (max-width: 320px)
+  body
+    font-size: 14px
+@media screen and (min-width: 321px) and (max-width: 400px)
+  body
+    font-size: 16px
+
+@media screen and (min-width: 401px)
+  body
+    font-size: 18px
+
+html,body
+  width: 100%
+  height: 100%
+
+html
+  font-size: 62.5%
+
+.container
+  width: 100%
+  height: 100%
+  overflow: hidden
+  .header
+    width: 100%
+    height: 44px
+    line-height: 44px
+    background: #333333
+    color: #ffffff
+    .head
+      width: 100%
+      height: 44px
+      text-align: center
+      .h-back
+        position: absolute
+        top: 15px
+        left: 15px
+        color: #ffffff
+      .h-help
+        width: 100%
+        font-size: 18px
+        line-height: 44px
+        text-align: center
+  .section
+    width: 100%
+    height: 100%
+    overflow: hidden
+    .sect
+      width: 100%
+      height: 44px
+      text-align: center
+      .s-back
+        position: absolute
+        top: 58px
+        left: 15px
+      .s-help
+        width: 100%
+        font-size: 18px
+        line-height: 44px
+        color: #000000
+    .swiper-slide
+      width: 100%
+      height: 100%
+      img
+        width: 100%
+        height: 100%
+
+@keyframes retat
+  0%
+    -webkit-transform: skew(0deg,0deg)
+  50%
+    -webkit-transform: skew(10deg,10deg)
+  100%
+    -webkit-transform: skew(0deg,0deg)
+
+@keyframes  rotat1
+  from
+    -webkit-transform: rotate3d(0,1,0,0deg)
+    -webkit-transform-origin: 90% 90%
+  to
+    -webkit-transform: rotate3d(0,1,0,360deg)
+
+
+@keyframes  rotat2
+  0%
+    -webkit-transform: translate3d(0px,0px,0px)
+  50%
+    -webkit-transform: translate3d(30px,30px,50px)
+  100%
+    -webkit-transform: translate3d(0px,0px,0px)
+
+.rot
+  width: 100px
+  height: 100px
+  background: #0f0
+  margin: 30px
+  border-radius: 30px
+  -webkit-animation: retat 2s infinite
+.rot1
+  width: 100px
+  height: 100px
+  background: #0ffff0
+  margin: 30px
+  border-radius: 30px
+  -webkit-animation: rotat1 2s infinite linear
+
+.rot2
+  width: 100px
+  height: 100px
+  background: #0f0f0f
+  margin: 30px
+  border-radius: 30px
+  -webkit-animation: rotat2 1s infinite linear
+.rot3
+  width: 100px
+  height: 100px
+  background: #0f0fff
+  margin: 30px
+  border-radius: 30px
+
+.rot3
+  transform: rotate3d(0,0,0,0deg)
+  transition: transform 2s
+.rot3:hover
+  transform: rotate3d(1,0,1,72000deg)
+  transition: transform 20s ease-in
+
+
+#four
+  width: 100%
+  height: 500px
+  overflow: hidden
+  background: #eeeddd
+.scroll
+  width: 100%
+  div
+    width: 94%
+    height: 12.4rem
+    margin-left: 3%
+    margin-top: 1rem
+    p
+      width: 100%
+      line-height: 3.6rem
+      background: #ffffff
+      i
+        display: inline-block
+        padding: 0 3%
+    a
+      box-sizing: border-box
+      display: inline-block
+      width: 25%
+      height: 4.4rem
+      float: left
+      text-align: center
+      line-height: 4.4rem
+      background: #ffffff
+      font-size: 1.2rem
+
+.color-cc
+  color: #cccccc
+.fr
+  float: right
+  margin-top: 1rem
+  font-size: 2rem

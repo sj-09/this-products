@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name=”apple-mobile-web-app-capable” content=”yes”/>
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”default”/>
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black”/>
+    <meta name=”apple-mobile-web-app-status-bar-style” content=”black-translucent”/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/int.css"/>
+</head>
+<body>
+<div class="warp">
+    <header class="header">
+        <p class="head"><a href="#" class="left"><i class="fa fa-angle-left"></i>返回</a><span>分期计算器</span><a href="#"
+                                                                                                            class="fa fa-ellipsis-h right"></a>
+        </p>
+    </header>
+    <section class="cont">
+        <div class="tophe">
+            <ul>
+                <li class="chejia">
+                    <label>车　　价：</label>
+                    <input type="text" list="menu" class="wid60" placeholder="10万"/>
+                    <datalist id="menu">
+                        <option value="10万以下"></option>
+                        <option value="10--20万"></option>
+                        <option value="20--50万"></option>
+                        <option value="50万以上"></option>
+                    </datalist>
+                </li>
+                <li class="daikuan">
+                    <span>贷款时间：</span>
+                    <input type="radio" name="1" id="one"/>
+                    <label for="one"></label>24个月
+                    <input type="radio" name="1" id="two"/>
+                    <label for="two"></label>36个月
+                </li>
+                <li>
+                    <label>年化利率：</label>
+                    <input type="text" list="men" class="wid60" placeholder="5.5%"/>
+                    <datalist id="men">
+                        <option value="5.5%"></option>
+                        <option value="6.2%"></option>
+                        <option value="6.6%"></option>
+                        <option value="7.0%"></option>
+                    </datalist>
+                </li>
+                <li>
+                    <button type="submit" class="button">计算</button>
+                </li>
+            </ul>
+        </div>
+        <div class="result">
+            <div class="small-result">
+                计算结果
+            </div>
+            <div class="list">
+                <ul>
+                    <li><span class="fr"><b>0</b>元</span><span class="fl">首付</span></li>
+                    <li><span class="fr"><b>3236.11</b>元</span><span class="fl">月供</span>+</li>
+                    <li><span class="fr">36个月</span>*</li>
+                    <li><span class="fr"><b>1500</b>元</span><span class="fl">一次性贷款手续费</span>+</li>
+                    <li class="bor-btm line-th"><span class="fr througt">3000元</span></li>
+                    <li><span class="fr"><b>11.8万</b>元</span><span class="fl">总共花费</span></li>
+                    <li class="line-th"><span class="fr">(含总利息1.65万元)</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+</div>
+</body>
+</html>

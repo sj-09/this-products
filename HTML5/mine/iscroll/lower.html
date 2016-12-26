@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        input{
+            display: none;
+        }
+        input+.big .small{
+            margin-left: 0;
+        }
+        input:checked+.big .small{
+            margin-left: 30px;
+        }
+
+        .big{
+            width:50px;
+            height:25px;
+            border-radius: 20px;
+            border: 1px solid #000000;
+        }
+        .small{
+            width: 20px;
+            height:25px;
+            border-radius: 20px;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<label>
+<input type="checkbox"/>
+<div class="big">
+    <div class="small"></div>
+</div></label>
+</body>
+</html>

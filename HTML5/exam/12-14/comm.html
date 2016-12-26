@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="./css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/comm.css"/>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <p class="head">
+            <a href="#" class="h-back fa fa-chevron-left">
+                返回
+            </a>
+            <span class="h-help">
+                新鲜智造
+            </span>
+        </p>
+    </header>
+    <section class="section">
+        <p class="sect">
+            <a href="#" class="s-back fa fa-chevron-left">
+            </a>
+            <span class="s-help">
+                小鲜测评
+            </span>
+        </p>
+
+        <div class="box">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="one">
+                        <a href="#two">
+                            <img src="images/a_02.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" id="two">
+                        <a href="#one">
+                            <img src="images/b_02.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rot"></div>
+                        <div class="rot1"></div>
+                        <div class="rot2"></div>
+                        <div class="rot3"></div>
+                    </div>
+                    <div class="swiper-slide" id="four">
+                        <div class="scroll">
+                            <div>
+                                <p><i class="fa fa-hotel"></i>热门品牌</p>
+                                <a href="#">金陵</a>
+                                <a href="#">锦江之星</a>
+                                <a href="#">布丁</a>
+                                <a href="#">维也纳</a>
+                                <a href="#">豪生</a>
+                                <a href="#">泛太平洋</a>
+                                <a href="#">汉庭</a>
+                                <a href="#" class="color-cc">更多</a>
+
+                            </div>
+                            <div>
+                                <p><i class="fa fa-shopping-bag"></i>商业区 </p>
+                                <a href="#">观前街商圈</a>
+                                <a href="#">金鸡湖商业区</a>
+                                <a href="#">石路商业区</a>
+                                <a href="#">火车站地区</a>
+                                <a href="#">苏州汽车南站</a>
+                                <a href="#">苏州新区</a>
+                                <a href="#">苏州工业园区</a>
+                                <a href="#" class="color-cc">十全街地区</a>
+
+                            </div>
+                            <div>
+                                <p><i class="fa fa-spoon"></i>热门景点 </p>
+                                <a href="#">苏州乐园</a>
+                                <a href="#">水上世界</a>
+                                <a href="#">国家湿地公园</a>
+                                <a href="#">金鸡湖</a>
+                                <a href="#">苏州摩天轮</a>
+                                <a href="#">盘门</a>
+                                <a href="#">震泽古镇</a>
+                                <a href="#" class="color-cc">吴中汽车站</a>
+
+                            </div>
+                            <div>
+                                <p><i class="fa fa-paper-plane"></i>机场车站 </p>
+                                <a href="#">苏州火车站</a>
+                                <a href="#">苏州高铁站</a>
+                                <a href="#">新区高铁站</a>
+                                <a href="#">相城高铁站</a>
+                                <a href="#">苏州汽车北站</a>
+                                <a href="#">苏州汽车南站</a>
+                                <a href="#">苏州汽车西站</a>
+                                <a href="#">吴中汽车站</a>
+
+                            </div>
+                            <div>
+                                <p><i class="fa fa-map-marker"></i>行政区 </p>
+                                <a href="#">吴中区</a>
+                                <a href="#">吴江区</a>
+                                <a href="#">姑苏区</a>
+                                <a href="#">相城区</a>
+                                <a href="#">虎丘区</a>
+                                <a href="#">工业园区</a>
+                                <a href="#">苏州市区</a>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="js/iscroll5.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var wraps = new IScroll('#four');
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: "horizontal"
+    });
+</script>
+</body>
+</html>
